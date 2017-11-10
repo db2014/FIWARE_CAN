@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.okis.fiwareproba.MainActivity">
+
+    <LinearLayout
+            android:id="@+id/Layout_gornja_polovina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <TextView
+            android:id="@+id/main_prikaz_Id_senzora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senzor1"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/main_prikaz_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura:**°C"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:textSize="40dp"
+        />
+        <TextView
+            android:id="@+id/main_prikaz_humi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vlaznost:**%"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            />
+        <TextView
+            android:id="@+id/main_prikaz_can"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="40dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_donja_polovina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/main_button_upDateSenzor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Azuriraj vrednosti senzora"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:onClick="azuriranjeSenzora"
+            />
+        <Button
+            android:id="@+id/main_button_prikazi_na_mapi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prikazi na mapi"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:onClick="prikazNaKarti"
+            />
+        <Button
+            android:id="@+id/main_button_CEP_reaktiviraj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEP-reaktiviraj"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:onClick="pokreniCep"
+            />
+    </LinearLayout>
+
+</LinearLayout>

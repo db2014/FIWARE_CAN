@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/popup"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/azuiranje_naziv_atributa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:text="Naziv" />
+
+    <TextView
+        android:id="@+id/azuiranje_tip_atributa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:text="Naziv" />
+
+        <EditText
+            android:id="@+id/azuiranje_vrednost_atributa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:text="Vrednost" />
+    <Button
+        android:id="@+id/azuriranje_sacuvaj"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sacuvaj" />
+
+</LinearLayout>
